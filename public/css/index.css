@@ -1,0 +1,47 @@
+.header-section{
+    background-image: url("../img/cabecera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 'logo menu menu rrss'
+                         'left center center right'
+                         'down down down down';
+    min-height: 50vw;
+}
+
+.item-center{
+    border: 1px solid black;
+    grid-area: center;
+}
+
+.item-down{
+    border: 1px solid black;
+    grid-area: down;
+}
+
+.item-left{
+    border: 1px solid black;
+    grid-area: left;
+}
+
+.item-logo{
+    border: 1px solid black;
+    grid-area: logo;
+}
+
+.item-menu{
+    /* align-self: center; */
+    justify-self: center;
+    border: 1px solid black;
+    grid-area: menu;
+}
+
+.item-right{
+    border: 1px solid black;
+    grid-area: right;
+}
+
+.item-rrss{
+    border: 1px solid black;
+    grid-area: rrss;
+}

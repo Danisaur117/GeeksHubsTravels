@@ -1,0 +1,12 @@
+{
+  "name": "geekshubstravels",
+  "version": "1.0.0",
+  "description": "Geeks Hubs Travels with CSS Flex",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Belmonte Urbano",
+  "license": "ISC"
+}
