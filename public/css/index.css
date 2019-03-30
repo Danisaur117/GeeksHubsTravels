@@ -43,5 +43,57 @@
 
 .item-rrss{
     border: 1px solid black;
+    display: grid;
     grid-area: rrss;
+    grid-template-areas: 'logo-tt logo-wh logo-fb logo-ig logo-in logo-yt';
+    max-width: 100%;
+    padding: 10px 10px;
+}
+
+.logo-fb{
+    background-image: url("../img/social/logo-fb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo-fb;
+    margin: 3px 3px;
+}
+
+.logo-ig{
+    background-image: url("../img/social/logo-ig.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo-ig;
+    margin: 3px 3px;
+}
+
+.logo-in{
+    background-image: url("../img/social/logo-in.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo-in;
+    margin: 3px 3px;
+}
+
+.logo-tt{
+    background-image: url("../img/social/logo-tt.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo-tt;
+    margin: 3px 3px;
+}
+
+.logo-wh{
+    background-image: url("../img/social/logo-wh.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo-wh;
+    margin: 3px 3px;
+}
+
+.logo-yt{
+    background-image: url("../img/social/logo-yt.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo-yt;
+    margin: 3px 3px;
 }
