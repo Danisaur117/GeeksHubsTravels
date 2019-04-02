@@ -1,3 +1,19 @@
+nav {
+    display: grid;
+    grid-template-areas: 'option1 option2 option3';
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+    padding-left: 50px;
+}
+
+nav > a {
+    text-decoration: none;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
 .header-section{
     background-image: url("../img/cabecera.jpg");
     background-repeat: no-repeat;
@@ -6,6 +22,7 @@
     grid-template-areas: 'logo menu menu rrss'
                          'left center center right'
                          'down down down down';
+    grid-template-rows: auto 40% 40%;
     min-height: 50vw;
 }
 
@@ -31,7 +48,7 @@
 
 .item-menu{
     /* align-self: center; */
-    justify-self: center;
+    /* justify-self: center; */
     border: 1px solid black;
     grid-area: menu;
 }
@@ -96,4 +113,31 @@
     background-size: contain;
     grid-area: logo-yt;
     margin: 3px 3px;
+}
+
+.option1 {
+    /* border: 1px solid black; */
+    color: whitesmoke;
+    font-size: 1.3em;
+    grid-area: option1;
+    min-height: 50px;
+    padding: 1rem 1rem;
+}
+
+.option2 {
+    /* border: 1px solid black; */
+    color: whitesmoke;
+    font-size: 1.3em;
+    grid-area: option2;
+    min-height: 50px;
+    padding: 1rem 1rem;
+}
+
+.option3 {
+    /* border: 1px solid black; */
+    color: whitesmoke;
+    font-size: 1.3em;
+    grid-area: option3;
+    min-height: 50px;
+    padding: 1rem 1rem;
 }
