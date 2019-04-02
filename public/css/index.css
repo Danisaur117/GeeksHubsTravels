@@ -7,6 +7,8 @@ nav {
 }
 
 nav > a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
     text-decoration: none;
 }
 
@@ -42,14 +44,14 @@ nav > a:hover {
 }
 
 .item-logo{
-    border: 1px solid black;
+    align-content: center;
+    align-items: center;
     grid-area: logo;
+    grid-template-areas: 'l-banner'
+                         'l-name';
 }
 
 .item-menu{
-    /* align-self: center; */
-    /* justify-self: center; */
-    border: 1px solid black;
     grid-area: menu;
 }
 
@@ -59,12 +61,32 @@ nav > a:hover {
 }
 
 .item-rrss{
-    border: 1px solid black;
     display: grid;
     grid-area: rrss;
     grid-template-areas: 'logo-tt logo-wh logo-fb logo-ig logo-in logo-yt';
     max-width: 100%;
     padding: 10px 10px;
+}
+
+.l-banner{
+    align-items: center;
+    align-content: center;
+    background-image: url("../img/iconoweb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: l-banner;
+    min-height: 10vh;
+    margin: 0vh 10vh 0vh 10vh;
+}
+
+.l-name{
+    color: #231F20;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8vw;
+    font-weight: bold;
+    grid-area: l-name;
+    min-height: 50px;
+    text-align: center;
 }
 
 .logo-fb{
@@ -116,27 +138,24 @@ nav > a:hover {
 }
 
 .option1 {
-    /* border: 1px solid black; */
     color: whitesmoke;
-    font-size: 1.3em;
+    font-size: 1.8vw;
     grid-area: option1;
     min-height: 50px;
     padding: 1rem 1rem;
 }
 
 .option2 {
-    /* border: 1px solid black; */
     color: whitesmoke;
-    font-size: 1.3em;
+    font-size: 1.8vw;
     grid-area: option2;
     min-height: 50px;
     padding: 1rem 1rem;
 }
 
 .option3 {
-    /* border: 1px solid black; */
     color: whitesmoke;
-    font-size: 1.3em;
+    font-size: 1.8vw;
     grid-area: option3;
     min-height: 50px;
     padding: 1rem 1rem;
